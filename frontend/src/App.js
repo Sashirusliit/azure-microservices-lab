@@ -5,7 +5,7 @@ function App() {
   const [appointments, setAppointments] = useState([]);
   
   // Connects to the gateway URL configured via 'az staticwebapp appsettings set' [cite: 269, 270, 271, 272, 273]
-  const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+  const apiUrl = 'https://gateway.proudglacier-366c95cc.eastus.azurecontainerapps.io';
 
   useEffect(() => {
     // 1. Check Gateway Health
